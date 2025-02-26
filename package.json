@@ -1,0 +1,11 @@
+{
+  "name": "senior-project",
+  "version": "1.0.0",
+  "description": "Welcome to Almari, a modern, secure, and specialized marketplace web application tailored specifically for college students in the United States. Designed to enable students to safely buy, sell, and exchange items within their college community, Almari offers a user-friendly interface and robust backend, ensuring a secure transaction environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
