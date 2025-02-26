@@ -2,6 +2,7 @@
     "name": "client",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://sbbaloch2024.github.io/Senior-Project/",
     "dependencies": {
         "@fortawesome/free-solid-svg-icons": "^6.5.2",
         "@fortawesome/react-fontawesome": "^0.2.0",
@@ -24,9 +25,11 @@
     },
     "scripts": {
         "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-        "build": "react-scripts build",
+        "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -42,5 +45,9 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "babel-jest": "^24.9.0",
+        "gh-pages": "^6.3.0"
     }
 }
